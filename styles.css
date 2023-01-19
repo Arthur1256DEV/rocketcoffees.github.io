@@ -108,7 +108,7 @@ header{
     display: none;
 }
 
-@media (max-width: 720px){ /*Continuar fazendo a reponsividade mobile*/
+@media (max-width: 715px){
     body{
         background-image: url("./assets/blur-mobile.png");
         background-repeat: no-repeat;
@@ -221,6 +221,119 @@ header{
         border-top: 1px solid var(--border);
         border-left: 5px solid lightgreen;
     }
+}
+
+@media (max-width: 720px){
+        body{
+        background-image: url("./assets/blur-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    header{
+        border-bottom: 1px solid var(--border);
+        height: 60px;
+    }
+
+    nav, .logoPC, .button{
+        display: none;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .logomobile{
+        display: initial;
+    }
+
+    .buttonMobile{
+        display: initial;
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .buttonMobile:hover{
+        transition: .2s;
+        transform: scale(1.1);
+    }
+
+    .outborder{
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .containerNormal{
+        margin-left: 28vw;
+    }
+
+    .coffee{
+        margin-right: 2vw;
+        margin-top: 6vh;
+        width: 400px;
+    }
+
+    .ContainerMobile{
+        margin-top: 300px;
+        display: initial;
+    }
+    .textMobile{
+        margin-top: 80px;
+        color: var(--text-color-menu-mobile);
+        width: 300px;
+        text-align: center;
+        font-size: x-large;
+        margin-left: 27vw;      
+    }
+
+    .buttonMobile2{
+        display: initial;
+        border: 2px solid var(--button);
+        border-radius: 5px; 
+        background: none;
+        color: var(--text-color);
+        height: 40px;
+        width: 200px;
+        padding: 5px;
+        margin-left: 32vw;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        transition: 0.2s;
+    }
+
+    .buttonMobile2:hover{
+        transition: 0.2s;
+        transform: scale(1.1);
+        background-color: var(--button);
+    }
+
+    .buttonMobileClose{
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
 
 
+    .line1{
+        border-bottom: 1px solid var(--border);
+        width: 100vw;
+        padding: 15px;
+        transition: .2s;
+    }
+
+    .line1:hover{
+        transition: .2s;
+        transform: scaleX(1.03);
+        background-color: var(--border);
+    }
+
+    .line1:first-child{
+        border-top: 1px solid var(--border);
+        border-left: 5px solid lightgreen;
+    }
 }
