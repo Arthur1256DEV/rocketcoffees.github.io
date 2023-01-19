@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/logo-desktop.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <title>RocketCoffee</title>
+</head>
+<body>
+
+    <header>
+        <img src="./assets/logo-desktop.svg" alt="" class="logoPC">
+        <img src="./assets/logo-mobile.svg" alt="" class="logomobile">
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Recompensas</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Lojas</a></li>
+            </ul>
+        </nav>
+
+        <input type="button" value="PEGAR MEU CAFÉ" class="button">
+
+        <button class="buttonMobile" onclick="addStyle()"><img src="./assets/menu-buguer-open.svg" alt=""></button>
+
+        <button class="buttonMobileClose" onclick="remStyle()"><img src="./assets/menu-buguer-close.svg" alt=""></button>
+
+        
+    </header>
+
+    <main>
+        <div class="mobileNone">
+        <div class="ContainerMobile">
+            <p class="textMobile">O café fará seu código decolar para o proximo nível.</p>
+        </div>
+
+        <input type="button" value="PEGAR CAFÉ >" class="buttonMobile2">
+        
+        <div class="containerNormal">
+            <h1>Great Coffee</h1>
+            <h1 class="outborder">&lt; Great Code/ 	&gt;</h1>
+        </div>
+
+        <img src="./assets/rocket-coffee.png" alt="" class="coffee">
+        </div>
+
+        <div class="mobilenav">
+            <div class="line1">
+                <a href="#" class="StyleA">Home</a> <br>
+            </div>
+
+            <div class="line1">
+                <a href="#" class="StyleA">Menu</a> <br>
+            </div>
+
+            <div class="line1">
+                <a href="#" class="StyleA">Recompensas</a> <br>
+            </div>
+
+            <div class="line1">
+                <a href="#" class="StyleA">Gift Cards</a> <br>
+            </div>
+
+            <div class="line1">
+                <a href="#" class="StyleA">Lojas</a>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="./javaScript.js"></script>
+</html>

@@ -1,0 +1,226 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+p{
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: -20px;
+    font-size: 60px;
+}
+
+body{
+    margin: 0;
+    background-color: var(--backgrond);
+    background-image: url("./assets/blur-1.png"), url("./assets/blur-2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: cover, cover;
+}
+
+/*Tentar deixar o header flex*/
+header, ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li{
+    transition: 0.2s;
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+ul{
+    gap: 3em;
+    list-style: none;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    margin-top: 4vh;
+}
+
+.button{
+    border: 2px solid var(--button);
+    border-radius: 5px; 
+    background: none;
+    color: var(--text-color);
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:hover{
+    transition: .2s;
+    transform: scale(1.1);
+    background-color: var(--button);
+}
+
+.buttonMobile{
+    display: none;
+}
+
+.containerNormal{
+    margin-left: 35vw;
+}
+
+.outborder{
+    margin-left: -4vw;
+    font-family: sans-serif;
+    -webkit-text-stroke-color: #8257E5;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+
+.coffee{
+    margin-left: 20vw;
+    margin-top: 6vh;
+}
+
+
+
+
+.logomobile, .buttonMobile2, .containerMobile, .buttonMobileClose, .mobilenav{
+    display: none;
+}
+
+@media (max-width: 720px){ /*Continuar fazendo a reponsividade mobile*/
+    body{
+        background-image: url("./assets/blur-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    header{
+        border-bottom: 1px solid var(--border);
+        height: 60px;
+    }
+
+    nav, .logoPC, .button{
+        display: none;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .logomobile{
+        display: initial;
+    }
+
+    .buttonMobile{
+        display: initial;
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .buttonMobile:hover{
+        transition: .2s;
+        transform: scale(1.1);
+    }
+
+    .outborder{
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .containerNormal{
+        margin-left: 20vw;
+    }
+
+    .coffee{
+        margin-left: 0px;
+        margin-top: 6vh;
+        width: 400px;
+    }
+
+    .ContainerMobile{
+        margin-top: 300px;
+        display: initial;
+    }
+    .textMobile{
+        margin-top: 80px;
+        color: var(--text-color-menu-mobile);
+        width: 300px;
+        text-align: center;
+        font-size: x-large;
+        margin-left: 13vw;      
+    }
+
+    .buttonMobile2{
+        display: initial;
+        border: 2px solid var(--button);
+        border-radius: 5px; 
+        background: none;
+        color: var(--text-color);
+        height: 40px;
+        width: 200px;
+        padding: 5px;
+        margin-left: 25vw;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        transition: 0.2s;
+    }
+
+    .buttonMobile2:hover{
+        transition: 0.2s;
+        transform: scale(1.1);
+        background-color: var(--button);
+    }
+
+    .buttonMobileClose{
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+
+    .line1{
+        border-bottom: 1px solid var(--border);
+        width: 100vw;
+        padding: 15px;
+        transition: .2s;
+    }
+
+    .line1:hover{
+        transition: .2s;
+        transform: scaleX(1.03);
+        background-color: var(--border);
+    }
+
+    .line1:first-child{
+        border-top: 1px solid var(--border);
+        border-left: 5px solid lightgreen;
+    }
+
+
+}
